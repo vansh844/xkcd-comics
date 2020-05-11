@@ -23,7 +23,7 @@ let numb=0
 
 prev_button.addEventListener('click',(e)=>{
     console.log('btton clicked')
-    fetch('http://localhost:3000/xkcd_app?button=prev').then((response)=>{
+    fetch('/xkcd_app?button=prev').then((response)=>{
         response.json().then((data)=>{
             document.getElementById("imageid").src=data.img;
             img_title.textContent=data.title
