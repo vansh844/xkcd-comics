@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>xkcd-comics</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="main-box">
+            {{>header}}
+            <p>An alternative interface to view xkcd-comics</p>
+            <div id='but'>
+                <button id="first"><<</button>
+                <button id="prev">Prev</button>
+                <button id="rand">Random</button>
+                <button id="next">Next</button>
+                <button id="latest">>></button>
+            </div>
+            <h2 id='img_title'>{{text}}</h2>
+            <img id="imageid" src={{img_url}}>
+        </div>
+        
+        {{>footer}}
+        <script src="/js/app.js"></script>
+    </body>
+</html>
